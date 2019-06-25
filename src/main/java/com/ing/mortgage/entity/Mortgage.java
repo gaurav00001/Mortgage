@@ -1,6 +1,5 @@
 package com.ing.mortgage.entity;
 
-import java.time.LocalDate;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -14,6 +13,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+
 
 @Entity
 @Table(name = "Mortgage")
@@ -43,5 +43,4 @@ public class Mortgage {
 	@OneToOne
 	private Customer customer;
 	
-
 }
