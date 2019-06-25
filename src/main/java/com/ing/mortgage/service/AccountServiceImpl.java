@@ -28,14 +28,13 @@ public class AccountServiceImpl  implements AccountService{
 		
 		for (int i = 0; i < accountList.size(); i++) {
 			AccountDetailsDTO accountDetailsDTO=new AccountDetailsDTO();
-			accountDetailsDTO.setAccountNumber((long) accountList.get(i).getAccountId());
+			accountDetailsDTO.setAccountNumber(accountList.get(i).getAccountNumber());
 			accountDetailsDTO.setBalance(accountList.get(i).getBalance());
 			accountDetailsDTO.setAccountType(accountList.get(i).getAccountType());
 			
 			listAccountDetailDTO.add(accountDetailsDTO);
 		}
 			
-		System.out.println();
 		
 		
 		return listAccountDetailDTO;

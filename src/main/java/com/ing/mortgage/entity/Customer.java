@@ -1,3 +1,4 @@
+
 package com.ing.mortgage.entity;
 
 import java.io.Serializable;
@@ -24,11 +25,11 @@ import lombok.ToString;
 @Table(name="Customer")
 public class Customer implements Serializable{
 	
+	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO) 
 	private Long customerId;
     private String loginId;
-    
     private String password;
     
     @OneToMany(mappedBy="customer",cascade=CascadeType.ALL)
@@ -36,3 +37,4 @@ public class Customer implements Serializable{
 	
 
 }
+

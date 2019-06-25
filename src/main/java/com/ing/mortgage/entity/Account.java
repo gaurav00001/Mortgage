@@ -32,6 +32,7 @@ public class Account implements Serializable{
 	private int accountId;
 	private int balance;
 	private String accountType;
+	private Long accountNumber;
 	
 	@ManyToOne
 	@JoinColumn(name="customerId",referencedColumnName="customerId")
